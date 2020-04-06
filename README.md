@@ -15,32 +15,9 @@
 </p>
 
 
-# Java Spring microservice
+# Cargo Routing Service
 
-In this sample application, you will create a basic Java web application using Spring. This provides a starting point for creating Java microservice applications running on [Spring](https://spring.io/). It contains no default application code, but comes with standard best practices, including a health check and application metric monitoring.
-
-Capabilities are provided through dependencies in the `pom.xml` file. The ports are set to the defaults of `8080` for http and `8443` for https and are exposed to the CLI in the `cli-config.yml` file. The ports are set in the `pom.xml` file and exposed to the CLI in the `cli-config.yml` file.
-
-## Steps
-
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=1298bc4e-4764-390b-a9eb-e4dcf3cc03ad) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
-
-### Deploying 
-
-After you have created a new git repo from this git template, remember to rename the project.
-Edit `package.json` and change the default name to the name you used to create the template.
-
-Make sure you are logged into the IBM Cloud using the IBM Cloud CLI and have access 
-to you development cluster. If you are using OpenShift make sure you have logged into OpenShift CLI on the command line.
-
-```$bash
-npm i -g @garage-catalyst/ibm-garage-cloud-cli
-```
-
-Use the IBM Garage for Cloud CLI to register the GIT Repo with Jenkins 
-```$bash
-igc pipeline -n dev
-```
+Microservice to route cargo
 
 ### Building Locally
 
@@ -72,11 +49,3 @@ For more details on how to use this Starter Kit Template please review the [IBM 
 This sample application is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 [Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
-
-### Periodically update from the template
-
-Finally, the template components can be periodically updated by running the following:
-
-```bash
-./update-template.sh
-```
