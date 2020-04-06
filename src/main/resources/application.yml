@@ -19,8 +19,8 @@ swagger:
   baseApiPackage:
   - "com.cargotracker"
   - "com.ibm.health"
-  title: "${IMAGE_NAME:template-spring-boot}"
-  description: "Description"
+  title: "cargo-routing-service"
+  description: "cargo-routing-service"
   version: "1.0.0"
   termsOfServiceUrl: ""
 
@@ -40,7 +40,6 @@ server:
 logging:
   level:
     ROOT: ${LOG_LEVEL:INFO}
-    com.ibm.hello: DEBUG
     com.ibm.cloud_garage: DEBUG
     org.springframework: ERROR
     org.springframework.web: WARN
