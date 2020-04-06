@@ -5,12 +5,10 @@ spring:
     name: "${IMAGE_NAME:template-spring-boot}"
   datasource:
     url: "jdbc:mysql://mysql.cargotracker:3306/routingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
-    #url: "jdbc:mysql://159.8.134.131:31037/routingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
     username: routingmsdb
     password: routingmsdb
   rabbitmq:
     host: rabbitmq-headless.cargotracker
-    #host: localhost
     port: 5672
     username: guest
     password: guest  
